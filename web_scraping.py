@@ -7,14 +7,13 @@ import matplotlib.pyplot as plt
 from rapidfuzz import process, fuzz
 
 
-
-
-base_url = "https://www.jumia.co.ke/all-products/"
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-}
 def scrape_jumia():
   page = 1
+  base_url = "https://www.jumia.co.ke/all-products/"
+  headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+   }
+  
 
   # Initialize empty list to store product data
   all_products = []
