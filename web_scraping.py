@@ -155,8 +155,8 @@ def connect_streamlit():
             kilimall_raw = scrape_kilimall()
           
             if jumia_raw.empty:
-            st.warning("Using backup Jumia data")
-            jumia_raw = pd.read_csv(r"Jumia_df")
+             st.warning("Using backup Jumia data")
+             jumia_raw = pd.read_csv(r"Jumia_df")
 
             clean_j = clean_jumia(jumia_raw)
             clean_k = clean_kilimall(kilimall_raw)
