@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
-import sqlalchemy
 import streamlit as st
 import matplotlib.pyplot as plt 
 
