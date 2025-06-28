@@ -111,7 +111,7 @@ def clean_kilimall(df1):
 
 def clean_jumia(df):
 
-    df.dropna(subset=['name'])
+    #df.dropna(subset=['name'])
     df['price'] = df['price'].replace(r'[^0-9.]','', regex= True).astype(float)
     df['discount'] = df['discount'].replace(r'[^0-9]','', regex= True)
     df['ratings'] = df['rate'].str.extract(r'(\d+(?:\.\d+)?)').astype(float)
