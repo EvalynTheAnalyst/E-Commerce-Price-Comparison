@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt 
+from rapidfuzz import process, fuzz
 
 
 
@@ -120,10 +121,6 @@ def clean_jumia(df):
     df = df.drop(columns='rate', errors='ignore')
 
     return df
-    
-
-from rapidfuzz import process, fuzz
-
 
 def compare_products(kili_df, jumia_df, threshold=85):
     matches = []
