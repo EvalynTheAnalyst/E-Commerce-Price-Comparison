@@ -151,8 +151,9 @@ def connect_streamlit():
 
     if st.button("Scrape Jumia and Kilimall"):
         with st.spinner("Scraping data..."):
-            jumia_raw = scrape_jumia()
             kilimall_raw = scrape_kilimall()
+            jumia_raw = scrape_jumia()
+           
           
             if jumia_raw.empty:
              st.warning("Using backup Jumia data")
