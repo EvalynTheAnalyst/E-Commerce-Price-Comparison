@@ -171,8 +171,8 @@ def connect_streamlit():
             st.dataframe(matches)
 
             st.markdown("### 📉 Histogram of Price Differences")
-            fig1, ax1 = plt.subplots(figsize =(10,8))
-            matches['price_difference'].plot(kind='hist', bins=10, ax=ax1, color='skyblue', edgecolor='black')
+            fig1, ax1 = plt.subplots(figsize =(6,4))
+            matches['price_difference'].plot(kind='hist', bins=20, ax=ax1, color='skyblue', edgecolor='black')
             ax1.set_xlabel("Price Difference (Jumia - Kilimall)")
             st.pyplot(fig1)
 
@@ -180,7 +180,7 @@ def connect_streamlit():
             st.markdown("### 📊 Average Price on Each Platform")
             avg_kili = matches['kilimall_price'].mean()
             avg_jumia = matches['jumia_price'].mean()
-            fig2, ax2 = plt.subplots(figsize= (10,8))
+            fig2, ax2 = plt.subplots(figsize= (6,4))
             ax2.bar(['Kilimall', 'Jumia'], [avg_kili, avg_jumia], color=['blue', 'orange'])
             ax2.set_ylabel('Average Price (KES)')
             st.pyplot(fig2)
