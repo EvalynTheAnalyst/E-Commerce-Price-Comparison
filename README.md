@@ -1,4 +1,6 @@
 # 🛍️ E-Commerce Price Comparison App (Jumia vs Kilimall)
+![image](https://github.com/user-attachments/assets/10052092-c61f-46b0-95a4-a30e655914e1)
+
 
 ## 📌 Introduction
 
@@ -84,8 +86,9 @@ Once matched:
 - It highlights:
   -  Top 10 biggest price gaps
   -  Cheapest products
-  - Highest priced items
+  - Highest priced item
 - You can also **download results as a CSV**
+  
 
 ### 5. 🌐 Deployment-Ready
 
