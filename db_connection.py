@@ -15,7 +15,7 @@ def save_to_data():
     password = os.getenv('password')
 
     
-    engine = create_engine(f'postgresql+psycopg2://eva:1234@{host}:{port}/{database}')
+    engine = create_engine(f'postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}')
 
 
     with engine.connect() as conn:
