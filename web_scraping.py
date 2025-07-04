@@ -149,7 +149,7 @@ def connect_streamlit():
     st.title("📦 E-Commerce Price Tracker")
     st.markdown('Compare and analyze the prices of your favourite product in **Jumia** and **Kilimall**')
 
-    if st.button("Scrape Jumia and Kilimall"):
+    if st.button("Data Extraction Jumia and Kilimall"):
         with st.spinner("Scraping data..."):
             kilimall_raw = scrape_kilimall()
             jumia_raw = scrape_jumia()
